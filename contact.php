@@ -22,7 +22,6 @@ if (isset($_POST['submit'])) {
     $sql = "INSERT INTO contact (name, email, message) VALUES ('$name', '$email', '$message')";
 
     if (mysqli_query($koneksi, $sql)) {
-        echo "<script>alert('Success');</script>";
         
     } else {
         echo "<script>alert('Something went wrong');</script>";

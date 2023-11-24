@@ -29,6 +29,7 @@
             <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
             <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
             <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+            <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
           </ul>
         </div>
 
@@ -46,8 +47,8 @@
             I am <span class="home__title-color">Aqmarina <br />Shabihah</span>
           </h1>
           <h2>
-            a Cloud Computing cohort <br />
-            at Bangkit Acaedmy
+            Web Developer <br />
+            Data Analyst
           </h2>
           <br />
           <a href="#" class="button">Download CV</a>
@@ -170,6 +171,22 @@
           <a href="https://klpk3pbw.000webhostapp.com/index.php" target="_blank" class="work__img">
             <img src="assets/img/sikosma.png" alt="" />
           </a>
+        </div>
+      </section>
+
+      <!--===== CONTACT =====-->
+      <section class="contact section" id="contact">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact__container bd-grid">
+          <form action="contact.php" class="contact__form" method="post">
+            <span class="desc">Name</span>
+            <input type="text" placeholder="Your Name" class="contact__input" name="name" required />
+            <span class="desc">Email Address</span>
+            <input type="email" placeholder="Your Email Address" class="contact__input" name="email" required />
+            <span class="desc">Message</span>
+            <input type="text" placeholder="Your Message" class="contact__input" name="message" required />
+            <input type="submit" value="Contact Me" class="contact__button button" name="submit" onclick="Swal('Success', 'Berhasil mengirimkan pesan', 'success')" />
+          </form>
         </div>
       </section>
     </main>
